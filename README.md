@@ -1,27 +1,90 @@
-# dlvidz — command generator
+<div align="center">
 
-Minimalist, static, local-first download command generator for yt-dlp.
+# `dlvidz` 📼
 
-## Disclaimer — Educational Use Only
+### PASTE A LINK. GET A COMMAND. KEEP IT LOCAL.
 
-This page is provided for educational and informational purposes. We do not advocate, encourage, or condone illegal downloading, copyright infringement, or bypassing access restrictions. Only download content you own or are authorized to save, and respect applicable laws and platform terms.
+**A tiny, retro-flavoured command generator for [yt-dlp](https://github.com/yt-dlp/yt-dlp).**
 
-## Use
+![Static HTML](https://img.shields.io/badge/100%25-STATIC_HTML-8ABF83?style=for-the-badge&labelColor=202822)
+![Local first](https://img.shields.io/badge/LOCAL-FIRST-EED49F?style=for-the-badge&labelColor=202822)
+![No sign up](https://img.shields.io/badge/NO-SIGN_UP-9DCFE0?style=for-the-badge&labelColor=202822)
 
-Open `index.html` in any modern browser. There is no server, package install, build step, account, or telemetry.
+`[ macOS ]` · `[ Windows ]` · `[ Linux ]`
 
-Choose your OS, copy the install instructions, enter a video URL, choose optional login browser and download mode, then copy the generated command into your Terminal (Mac/Linux) or PowerShell (Windows).
+**[Open the command generator](./index.html)** · **[yt-dlp supported sites](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)**
 
-## Local setup
+</div>
 
-Save the `dlvidz` folder anywhere on your computer (for example, `~/Projects/dlvidz` on macOS/Linux or `Documents\dlvidz` on Windows), then open `index.html` in a browser.
+---
 
-You can host the HTML on a static website; everything runs locally in the browser.
+## `01` / WHAT IS THIS?
 
-## Limitations
+`dlvidz` is a minimal webpage that helps you install **yt-dlp**, select a video platform, paste a URL, and generate a ready-to-copy download command.
 
-`yt-dlp` determines supported platforms. Authentication and DRM restrictions apply. The commands generated here do not bypass DRM. For authenticated videos, be sure you are signed into the same browser profile used by yt-dlp.
+**The website does not download videos or execute commands.** You run the generated command yourself in your own terminal.
 
-On Linux, installation instructions target Ubuntu/Debian. Other distributions should use yt-dlp's official install documentation.
+```text
+  ┌─────────────────────────────────────────────────────┐
+  │  dlvidz                                     ● LOCAL │
+  ├─────────────────────────────────────────────────────┤
+  │                                                     │
+  │  PASTE A LINK.                                      │
+  │  GET A COMMAND.                                     │
+  │  DOWNLOAD LOCALLY.                                  │
+  │                                                     │
+  │  [ 1. Pick your OS      ]                           │
+  │  [ 2. Paste a video URL ]                           │
+  │  [ 3. Copy the command  ]                           │
+  │                                                     │
+  └─────────────────────────────────────────────────────┘
+```
 
-Windows instructions target PowerShell and require winget.
+## `02` / GET STARTED
+
+1. **Get the page:** Clone this repository or download it as a ZIP.
+2. **Open `index.html`:** Double-click the file in your browser. No web server required.
+3. **Install dependencies:** Choose **macOS**, **Windows**, or **Linux** and follow the on-page steps to install `yt-dlp` and `ffmpeg` as needed.
+4. **Build your command:** Select the source, paste an accessible video URL, then choose your format and optional browser authentication.
+5. **Copy → paste → run:** Execute the generated command in Terminal on macOS/Linux or PowerShell on Windows.
+
+```bash
+git clone https://github.com/jimjwong/dlvidz.git
+cd dlvidz
+# Open index.html with your preferred browser
+```
+
+> **Privacy by design:** The command generator is static HTML, CSS, and JavaScript. It has no application backend, user accounts, or built-in analytics. The URL you enter is processed in your browser. Running the copied command contacts the video source through yt-dlp.
+
+## `03` / FEATURES
+
+| Feature | What you get |
+| :-- | :-- |
+| 🖥️ Cross-platform guide | macOS, Windows, and Ubuntu/Debian Linux instructions |
+| 🔗 Link to command | Paste a supported URL and generate a `yt-dlp` command |
+| 📋 One-click copy | Copy instructions and generated commands |
+| 🎚️ Download options | Video/audio modes, subtitles, and playlist options |
+| 🔐 Signed-in access | Optional browser-cookie argument for content you can access |
+| 🧩 Zero-build setup | A single static HTML app; no app installation or account required |
+
+## `04` / GOOD TO KNOW
+
+- Supported websites and download success depend on **[yt-dlp](https://github.com/yt-dlp/yt-dlp)**, the source site, and your permissions.
+- Downloads happen **on your computer**, not on a server operated by dlvidz.
+- Restricted content may require a signed-in browser session. The tool does **not** bypass DRM or access controls.
+- The Linux setup guide targets **Ubuntu/Debian**; other distributions can follow the [official installation guide](https://github.com/yt-dlp/yt-dlp/wiki/Installation).
+- Windows instructions use **PowerShell** and `winget`.
+
+## ⚠️ DISCLAIMER / EDUCATIONAL USE ONLY
+
+> This page is provided for educational and informational purposes. We do not advocate, encourage, or condone illegal downloading, copyright infringement, or bypassing access restrictions. Only download content you own or are authorized to save, and respect applicable laws and platform terms.
+
+---
+
+<div align="center">
+
+**`dlvidz`** · SMALL TOOL, NO FUSS.
+
+<sub>Independent project · Not affiliated with yt-dlp or any video platform.</sub>
+
+</div>
